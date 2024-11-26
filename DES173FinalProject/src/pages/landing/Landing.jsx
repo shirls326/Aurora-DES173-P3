@@ -24,7 +24,7 @@ export default function Landing() {
 
             <button class = 'loginButton'>Log in</button>
 
-            <p>Don't have an account? <a href = "./signup/Signup.jsx">Create an account</a></p>
+            <p>Don't have an account? <a href = "/SignUpSerial">Create an account</a></p>
 
 
         </div>

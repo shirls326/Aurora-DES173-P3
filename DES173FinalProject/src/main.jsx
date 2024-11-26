@@ -11,7 +11,8 @@ import './index.css';
 
 // pages
 import Landing from './pages/landing/Landing';
-import Signup from './pages/signup/Signup';
+import SignUpSerial from './pages/signupSerial/SignupSerial';
+import SignUp from './pages/signup/Signup';
 // import Login from './pages/login/login';
 
 
@@ -20,7 +21,9 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Landing />}/>
-        <Route path="/signup" element={<Signup />}/>
+        <Route path="/SignUpSerial" element={<SignUpSerial />}/>
+        <Route path="/SignUp" element={<SignUp />}/>
+
 
 
    

@@ -9,3 +9,9 @@ body{
     background-color: red;
 
 }
+
+:root{
+    --lightGreen: #BDE9C8;
+    --innerContainerColor: #F8FFF6;
+
+}
