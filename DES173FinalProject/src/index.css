@@ -1,0 +1,11 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-height: 100vh;
+    width: auto;
+    background-color: red;
+
+}
