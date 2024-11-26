@@ -23,10 +23,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Landing />}/>
         <Route path="/SignUpSerial" element={<SignUpSerial />}/>
         <Route path="/SignUp" element={<SignUp />}/>
-
-
-
-   
       </Routes>
     </BrowserRouter>
   </StrictMode>,
