@@ -3,82 +3,121 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .innerContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    font-size: 50px;
+
     h1{
         font-family: "Playfair Display SC", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 5rem;
+        font-size: 10vh;
     }
 
     background-color: var(--innerContainerColor);
-    height: 90vh;
+    min-height: 90vh;
     width: 90%;
     border-radius: 1.5rem;
+    height: auto; /* Let height adjust based on content */
+
     p{
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: center;
     }
 
   
     button{
-        width: 40%;
-        height: 5%;
+        width: 25%;
+        height: 5vh;
         border-radius: 1rem;
         border-style: solid;
         background-color: #BDE9C8;
-    }
-}
-
-.SignUpInfo{
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    display: flex;
-    max-height: 100%;
-
-
-}
-
-.InputContainer{
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    p{
-        text-align: left;
-        padding-left: 1rem;
-        font-size: 1rem;
+       
     }
 
-    justify-content: space-around;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 1rem;
+    .SignUpInfo{
 
- 
+        display: flex;
 
-    input{
-        width: 90%;
-        padding: 0.9rem;
-        /* padding-left: 2rem; */
-        background-color: #ffffff;
-        border-style: solid;
-        border-radius: 1.5rem;
-        text-align: center;
-        font-size: 1rem;
+        max-height: 100%; /* Adjust this value as needed */
+        height: auto; /* Allow it to shrink if content is less */
+        max-width: 100%;
+        width: 75%;
+        height: 75%;
+        padding: 5%;
+
+
+    
+    
     }
+
+
+
+
+    .InputContainer{
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        p{
+            margin: 0;
+            text-align: left;
+            padding-left: 1rem;
+            font-size: 1rem;
+        }
+
+        justify-content: space-around;
+        max-width: 100%;
+        max-height: 100%;
+        /* padding: 0.15rem; */
+
+    
+
+        input{
+            width: 90%;
+            /* padding: 0.9rem; */
+            /* padding-left: 2rem; */
+            background-color: #ffffff;
+            border-style: solid;
+            border-radius: 1.5rem;
+            text-align: left;
+            font-size: 1rem;
+            max-width: 90%; /* Optional: Prevent inputs from growing too wide */
+            max-height: 100%;
+            height: auto;
+            padding: 3%;
+
+        }
+        box-sizing: border-box;
+        padding: 1%;
+
+    }
+
+    .col{
+
+        max-height: 100%;
+        flex: 1; /* Allow columns to grow/shrink equally */
+
+
+        min-width: 50%;
+        /* background-color: green; */
+    }
+
+
 }
 
-.col{
-    max-height: 100%;
-
-    min-width: 50%;
-    background-color: green;
+.InputContainer input {
+    width: 100%; /* Full width of the container */
+    max-width: none; /* Remove unnecessary restriction */
+}
+.SignUpInfo {
+    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+    width: 100%; /* Adjust to container size */
+    padding: 2%; /* Reduce padding for smaller scales */
 }
