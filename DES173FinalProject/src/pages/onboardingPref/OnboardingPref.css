@@ -1,0 +1,12 @@
+.Onboarding{
+    background-color: var(--lightGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .checkboxFormContainer{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px; /* Space between checkboxes */
+        padding: 20px;
+      }
+}
