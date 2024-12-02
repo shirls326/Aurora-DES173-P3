@@ -1,7 +1,16 @@
 import React from 'react'
 import './Signup.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Signup() {
+
+  const navigate = useNavigate(); 
+
+  const handleContinue = () => {
+   
+    navigate('/OnboardingPref'); // Uses the route that is declared in the main.jsx file
+  };
+
   return (
     <div className='SignUp container'>
       <div className='innerContainer'>  
@@ -42,7 +51,7 @@ export default function Signup() {
               </div>
                 
             </div>
-            <button>Continue</button>
+            <button onClick={handleContinue} >Continue</button>
         
         </div>
 
