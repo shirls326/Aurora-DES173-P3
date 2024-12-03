@@ -6,7 +6,7 @@ body{
 .container{
     min-height: 100vh;
     width: auto;
-    background-color: red;
+    background-color: var(--lightGreen);
 
 }
 
@@ -16,7 +16,7 @@ body{
 
 }
 
-p{
+p,label{
     font-family: "Manjari", sans-serif;
     font-style: normal;
 
@@ -33,7 +33,7 @@ p{
         font-family: "Playfair Display SC", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     background-color: var(--innerContainerColor);
@@ -55,12 +55,18 @@ p{
         border-radius: 1.5rem;
         text-align: center;
         font-size: 1rem;
+        font-family: "Manjari", sans-serif;
+        font-style: normal;
     }
     button{
         width: 40%;
-        height: 5%;
-        border-radius: 1rem;
-        border-style: solid;
-        background-color: #BDE9C8;
+        height: 7vh;
+        border-radius: 30px;
+        border-style: none;
+        color: white;
+        /* background-color: #BDE9C8; */
+        background-color: #7ED493;
+        font-size: 2rem;
+
     }
 }

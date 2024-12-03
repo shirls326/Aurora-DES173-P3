@@ -14,7 +14,7 @@ export default function Signup() {
   return (
     <div className='SignUp container'>
       <div className='innerContainer'>  
-          <h1>Sign Up</h1>
+          <h1>sign up</h1>
           <p>Enter your details below to create your <br/> account and get started</p>
             <div className='SignUpInfo'>
               <div className='col'>

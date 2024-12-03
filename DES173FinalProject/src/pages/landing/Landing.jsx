@@ -8,8 +8,8 @@ export default function Landing() {
 
         </div>
         <div className='right'>
-            <h1>Welcome!</h1>
-            <h3>Please enter your details</h3>
+            <h1>welcome!</h1>
+            <h2>Please enter your details</h2>
 
             <div className='loginInputs'>
 

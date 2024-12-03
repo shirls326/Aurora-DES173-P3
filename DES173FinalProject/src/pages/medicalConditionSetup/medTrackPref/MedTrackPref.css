@@ -1,0 +1,47 @@
+.medTrackPref{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .innerContainer{
+        h1{
+            font-weight: 400;
+            font-style: normal;
+            font-size: 4rem;
+            margin-bottom: 1%;
+        }
+        text-align: center;
+        .checkboxFormContainer{
+            /* background-color: red; */
+      
+              display: grid;
+              grid-template-columns: repeat(2, 4fr);
+              gap: 20px; /* Space between checkboxes */
+              padding: 20px;
+              max-height: 90%;
+              max-width: 100%;
+              width: 80%;
+      
+              .checkBoxDiv{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+         
+                /* background-color: blue; */
+                input{
+                  width: 20%;
+                  height: 20px;
+                  margin-right: 10px;
+                  display:flex;
+                  justify-content: flex-start;
+                }
+                label{
+                  width: 80%;
+                  font-size: 60%;
+          
+                }
+              }
+            }
+    }
+
+}

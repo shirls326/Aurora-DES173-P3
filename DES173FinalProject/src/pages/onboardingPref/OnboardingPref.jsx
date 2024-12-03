@@ -9,7 +9,7 @@ export default function OnboardingPref() {
 
   const handleContinue = () => {
    
-    navigate('/MedTrackingPref'); // Uses the route that is declared in the main.jsx file
+    navigate('/MedTrackingCheck'); // Uses the route that is declared in the main.jsx file
   };
           
 
@@ -19,7 +19,7 @@ export default function OnboardingPref() {
     <div className='Onboarding container'>
         <div className='innerContainer'>
             <h1>welcome, shirley!</h1>
-            <p>You can customize your bracelet and portal based on <br/> your preferences!</p>
+            <p>You can customize your bracelet and portal based on <br/> your preferences.</p>
             <h2>Which areas would you like to track or improve?</h2>
             {/* form prompting for preferences */}
             <div className='checkboxFormContainer'>
