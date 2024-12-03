@@ -1,7 +1,12 @@
 import React from 'react'
+import './MedicalMeds.css'
 
 export default function MedicalMeds() {
   return (
-    <div>MedicalMeds</div>
+    <div className='MedicalMeds container'>
+        <div className='innerContainer'>
+
+        </div>
+    </div>
   )
 }

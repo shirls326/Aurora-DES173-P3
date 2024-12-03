@@ -38,7 +38,10 @@
             text-align: center;
         }
         .no{
-            background-color: var(--lightRed);
+            background-color: white;
+            color: black;
+            border-style: solid;
+            border-color: #CCC;
         }
     }
     
