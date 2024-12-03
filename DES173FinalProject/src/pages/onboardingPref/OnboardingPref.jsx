@@ -28,24 +28,24 @@ export default function OnboardingPref() {
                   <label for="sleep">Sleep</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="exercise" name="exercise" value="exercise"/>
-                  <label for="exercise">Exercise</label>
+                  <input type="checkbox" id="activity" name="activity" value="activity"/>
+                  <label for="activity">Activity Goals</label>
                 </div>
                 <div className='checkBoxDiv'>
                   <input type="checkbox" id="nutrition" name="nutrition" value="nutrition"/>
                   <label for="nutrition">Nutrition</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="hydration" name="hydration" value="hydration"/>
-                  <label for="hydration">Hydration</label>
+                  <input type="checkbox" id="exercise" name="exercise" value="exercise"/>
+                  <label for="exercise">Exercise</label>
                 </div>
                 <div className='checkBoxDiv'>
                   <input type="checkbox" id="stress" name="stress" value="stress"/>
                   <label for="stress">Stress</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="meditation" name="meditation" value="meditation"/>
-                  <label for="meditation">Meditation</label>
+                  <input type="checkbox" id="medication" name="medication" value="medication"/>
+                  <label for="medication">Medication</label>
                 </div>
                 <div className='checkBoxDiv'>
                   <input type="checkbox" id="social" name="social" value="social"/>
