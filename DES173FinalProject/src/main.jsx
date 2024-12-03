@@ -14,7 +14,7 @@ import Landing from './pages/landing/Landing';
 import SignUpSerial from './pages/signupSerial/SignupSerial';
 import SignUp from './pages/signup/Signup';
 import OnboardingPref from './pages/onboardingPref/OnboardingPref';
-import MedTrackingPref from './pages/medtrackpref/MedTrackingPref';
+import MedTrackingPref from './pages/medtrackcheck/MedTrackingPref';
 // import Login from './pages/login/login';
 
 
