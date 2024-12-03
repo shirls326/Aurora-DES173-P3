@@ -16,7 +16,8 @@ body{
 
 }
 
-p,label{
+/* Global font for everythinbg */
+p,label,h2,h3{
     font-family: "Manjari", sans-serif;
     font-style: normal;
 
@@ -58,15 +59,16 @@ p,label{
         font-family: "Manjari", sans-serif;
         font-style: normal;
     }
-    button{
-        width: 40%;
-        height: 7vh;
-        border-radius: 30px;
-        border-style: none;
-        color: white;
-        /* background-color: #BDE9C8; */
-        background-color: #7ED493;
-        font-size: 2rem;
+    
+}
+button{
+    width: 40%;
+    height: 7vh;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    /* background-color: #BDE9C8; */
+    background-color: #7ED493;
+    font-size: 2rem;
 
-    }
 }
