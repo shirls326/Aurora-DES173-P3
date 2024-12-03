@@ -19,6 +19,8 @@ import MedTrackingCheck from './pages/medtrackcheck/MedTrackingPref';
 // If user wants to track specific condition, these are specific routes for that
 // import MedTrackingPref from './pages/medicalConditionSetup/MedTrackingPref/MedTrackingPref';
 import MedTrackPrefSetup from './pages/medicalConditionSetup/medTrackPref/MedTrackPref';
+import MedicalMedsTrack from './pages/medicalConditionSetup/MedsTrack/MedicalMeds';
+import MedicalMentalTrack from './pages/medicalConditionSetup/MedMentalHealth/MedicalMentalHealth';
 
 
 
@@ -38,7 +40,11 @@ createRoot(document.getElementById('root')).render(
         <Route path="/SignUp" element={<SignUp />}/>
         <Route path="/OnboardingPref" element={<OnboardingPref />}/>
         <Route path="/MedTrackingCheck" element={<MedTrackingCheck />}/>
+
+
         <Route path="/MedicalConditionSetup" element={<MedTrackPrefSetup />}/>
+        <Route path="/MedicalConditionSetup/MedsTrack" element={<MedicalMedsTrack />}/>
+        <Route path="/MedicalConditionSetup/MedMentalHealth" element={<MedicalMentalTrack />}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
