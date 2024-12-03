@@ -16,11 +16,13 @@ export default function SignupSerial() {
 
 
   return (
-    <div className='SignUp container'>
+    <div className='SignUpS container'>
         <div className='innerContainer'>
             <h1>Hello</h1>
-            <p>Please enter in your device <br/> serial number</p>
-            <input type = "text" placeholder='12345678-123-123'  onKeyDown={handleKeyPress}></input>
+            <div className='group'>
+              <p>Please enter in your device <br/> serial number</p>
+              <input type = "text" placeholder='12345678-123-123'  onKeyDown={handleKeyPress}></input>
+            </div>
 
             <p>I don't have a device, where do I get one?</p>
 

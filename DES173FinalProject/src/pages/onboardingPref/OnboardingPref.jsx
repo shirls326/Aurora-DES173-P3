@@ -18,8 +18,8 @@ export default function OnboardingPref() {
     
     <div className='Onboarding container'>
         <div className='innerContainer'>
-            <h1>Welcome! NAME</h1>
-            <p>You can customize your bracelet and portal based on your preferences!</p>
+            <h1>welcome, shirley!</h1>
+            <p>You can customize your bracelet and portal based on <br/> your preferences!</p>
             <h2>Which areas would you like to track or improve?</h2>
             {/* form prompting for preferences */}
             <div className='checkboxFormContainer'>
