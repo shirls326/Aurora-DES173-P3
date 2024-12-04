@@ -50,9 +50,9 @@ export default function MedicalMedsTrack() {
             <ul>
               {medications.map((med, index) => (
                 <li key={index}>
-                  {med}
-                  <button onClick={() => handleRemoveMedication(med)}>
-                    Remove
+                  <span className="medicationText">{med}</span>
+                  <button className = 'removeButton' onClick={() => handleRemoveMedication(med)}>
+                    X
                   </button>
                 </li>
               ))}

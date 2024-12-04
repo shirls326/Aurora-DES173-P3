@@ -3,11 +3,71 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
     .innerContainer{
         display: flex;
         text-align: center;
         flex-direction: column;
+    }
+
+
+    .removeButton{
+        margin-left: 10%;
+        background-color: transparent;
+        color: black;
+        font-size: 1.0rem;
+    }
+
+
+    ul{
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+        max-width: 90%;
+        max-height: 50%;
+
 
     }
+
+
+    li{ 
+        /* position: relative; */
+
+
+
+        height: 1.5rem; 
+
+        font-size: 1.5rem;
+        display: flex;
+        background-color: rgb(235, 255, 237);
+        border-radius: 50px;
+        max-width: 100%;
+        padding: 2vh 5vw;
+
+
+        border: 1px solid rgb(171, 171, 171); 
+        
+
+
+        align-items: center;
+        justify-content: space-around; 
+        margin: 1vh 1vh;
+
+
+        
+
+    }
+    .medicationText {
+        line-height: 1.25; 
+        display: inline-block; 
+        text-align: center;
+        height: 100%;
+        
+    }
+
+    
     
 }
