@@ -7,6 +7,9 @@ export default function MedicalMedsTrack() {
   const [step, setStep] = useState(0); // Track the current step in the process
   const [medications, setMedications] = useState([]);
   const [medicationInput, setMedicationInput] = useState(''); // Track the input for medication
+  const [customizationMode, setCustomizationMode] = useState(null); // Track which medication is being customized
+  const [medicationTimes, setMedicationTimes] = useState({}); // Track times for each medication
+  const [notes, setNotes] = useState(''); // Track additional notes
 
   const handleMedicationInputChange = (event) => {
     setMedicationInput(event.target.value);
@@ -23,14 +26,38 @@ export default function MedicalMedsTrack() {
     setMedications((prev) =>
       prev.filter((med) => med !== medicationToRemove)
     );
+    setMedicationTimes((prev) => {
+      const updatedTimes = { ...prev };
+      delete updatedTimes[medicationToRemove];
+      return updatedTimes;
+    });
+  };
+
+  const handleCustomize = (medication) => {
+    setCustomizationMode(medication); // Enter customization mode for the selected medication
+  };
+
+  const handleTimeChange = (medication, time) => {
+    setMedicationTimes((prev) => ({
+      ...prev,
+      [medication]: time,
+    }));
+  };
+
+  const handleSaveCustomization = () => {
+    setCustomizationMode(null); // Exit customization mode
   };
 
   const handleContinue = () => {
-    setStep(step + 1); // Move to the next step after clicking "Continue"
+    setStep(step + 1); // Move to the next step
   };
 
   const handleSubmit = () => {
-    // Once all preferences are collected, navigate to the next page
+    console.log({
+      medications,
+      medicationTimes,
+      notes,
+    });
     navigate('/NextStep');
   };
 
@@ -50,8 +77,16 @@ export default function MedicalMedsTrack() {
             <ul>
               {medications.map((med, index) => (
                 <li key={index}>
-                  <span className="medicationText">{med}</span>
-                  <button className = 'removeButton' onClick={() => handleRemoveMedication(med)}>
+                  <span
+                    className="medicationText clickable"
+                    onClick={() => handleCustomize(med)}
+                  >
+                    {med}
+                  </span>
+                  <button
+                    className="removeButton"
+                    onClick={() => handleRemoveMedication(med)}
+                  >
                     X
                   </button>
                 </li>
@@ -61,36 +96,46 @@ export default function MedicalMedsTrack() {
           </>
         );
       case 1:
-        return (
-          <div>
-            <p>When would you like to receive reminders for your medications?</p>
-            <label>
-              <input
-                type="checkbox"
-                value="Morning"
-                onChange={(event) => handleReminderTimesChange(event)}
-              />
-              Morning
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                value="Afternoon"
-                onChange={(event) => handleReminderTimesChange(event)}
-              />
-              Afternoon
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                value="Evening"
-                onChange={(event) => handleReminderTimesChange(event)}
-              />
-              Evening
-            </label>
-            <button onClick={handleContinue}>Continue</button>
-          </div>
-        );
+        if (customizationMode) {
+          // Render customization UI for the selected medication
+          return (
+            <div>
+              <p>Customize your schedule for {customizationMode}</p>
+              <label>
+                Time:
+                <input
+                  type="time"
+                  value={medicationTimes[customizationMode] || ''}
+                  onChange={(e) =>
+                    handleTimeChange(customizationMode, e.target.value)
+                  }
+                />
+              </label>
+              <button onClick={handleSaveCustomization}>Save</button>
+            </div>
+          );
+        } else {
+          // Render the general "customize later" view
+          return (
+            <>
+              <p>You can customize each medication by clicking on it, or continue to customize later.</p>
+              <ul>
+                {medications.map((med, index) => (
+                  <li key={index}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#000000" d="M10.5 17.5h3V15H16v-3h-2.5V9.5h-3V12H8v3h2.5zM7 21q-.825 0-1.412-.587T5 19V8q0-.825.588-1.412T7 6h10q.825 0 1.413.588T19 8v11q0 .825-.587 1.413T17 21zM6 5V3h12v2z"/></svg>
+                    <span
+                      className="medicationText clickable"
+                      onClick={() => handleCustomize(med)}
+                    >
+                      {med} {medicationTimes[med] ? `(Time: ${medicationTimes[med]})` : ''}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <button onClick={handleContinue}>Continue</button>
+            </>
+          );
+        }
       case 2:
         return (
           <div>
@@ -100,7 +145,7 @@ export default function MedicalMedsTrack() {
                 type="radio"
                 name="reminderMethod"
                 value="Phone"
-                onChange={handleReminderMethodChange}
+                onChange={(e) => console.log(e.target.value)}
               />
               Phone
             </label>
@@ -109,7 +154,7 @@ export default function MedicalMedsTrack() {
                 type="radio"
                 name="reminderMethod"
                 value="Email"
-                onChange={handleReminderMethodChange}
+                onChange={(e) => console.log(e.target.value)}
               />
               Email
             </label>
@@ -118,7 +163,7 @@ export default function MedicalMedsTrack() {
                 type="radio"
                 name="reminderMethod"
                 value="App"
-                onChange={handleReminderMethodChange}
+                onChange={(e) => console.log(e.target.value)}
               />
               App (via notifications)
             </label>
