@@ -99,10 +99,10 @@ export default function MedicalMedsTrack() {
         if (customizationMode) {
           // Render customization UI for the selected medication
           return (
-            <div>
+            <div className='TimeSetUp'>
               <p>Customize your schedule for {customizationMode}</p>
               <label>
-                Time:
+            
                 <input
                   type="time"
                   value={medicationTimes[customizationMode] || ''}

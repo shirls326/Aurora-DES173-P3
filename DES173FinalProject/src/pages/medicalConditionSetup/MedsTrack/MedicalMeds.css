@@ -9,6 +9,22 @@
         display: flex;
         text-align: center;
         flex-direction: column;
+        .TimeSetUp{
+            /* background-color: red; */
+            padding: 1%;
+            /* max-height: 100%; */
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            max-height: 100%;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            label{
+                width: 100%;
+            }
+        }
+        
     }
 
 
@@ -21,7 +37,7 @@
 
         ul {
             display: flex;
-            background-color: gray;
+            /* background-color: gray; */
             width: 80%;
             flex-wrap: wrap;
 
@@ -60,10 +76,10 @@
             /* height: 100%; */
             width: 100%; /* Full width */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background-color: gray;
+            /* background-color: gray; */
 
             height: 15vh;
-            width: 25vw;
+            width: 20vw;
             max-height: 100%;
             max-width: 100%;
      
@@ -73,7 +89,7 @@
                 max-height: 100%;
                 max-width: 100%;
                 display: flex;
-                background-color: blue;
+                /* background-color: blue; */
                 text-align: left;
                 height: 100%;
                 padding: 0;
@@ -89,7 +105,7 @@
 
             }
             .right{
-                background-color: red;
+                /* background-color: red; */
                 max-height: 100%;
                 max-width: 100%;
                 padding-right: 1vh;
