@@ -24,35 +24,35 @@ export default function OnboardingPref() {
             {/* form prompting for preferences */}
             <div className='checkboxFormContainer'>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="sleep" name="sleep" value="sleep"/>
+                  <input    className='checkbox' type="checkbox" id="sleep" name="sleep" value="sleep"/>
                   <label for="sleep">Sleep</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="activity" name="activity" value="activity"/>
+                  <input     className='checkbox' type="checkbox" id="activity" name="activity" value="activity"/>
                   <label for="activity">Activity Goals</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="nutrition" name="nutrition" value="nutrition"/>
+                  <input     className='checkbox' type="checkbox" id="nutrition" name="nutrition" value="nutrition"/>
                   <label for="nutrition">Nutrition</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="exercise" name="exercise" value="exercise"/>
+                  <input     className='checkbox' type="checkbox" id="exercise" name="exercise" value="exercise"/>
                   <label for="exercise">Exercise</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="stress" name="stress" value="stress"/>
+                  <input     className='checkbox' type="checkbox" id="stress" name="stress" value="stress"/>
                   <label for="stress">Stress</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="medication" name="medication" value="medication"/>
+                  <input     className='checkbox' type="checkbox" id="medication" name="medication" value="medication"/>
                   <label for="medication">Medication</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="social" name="social" value="social"/>
+                  <input     className='checkbox' type="checkbox" id="social" name="social" value="social"/>
                   <label for="social">Social</label>
                 </div>
                 <div className='checkBoxDiv'>
-                  <input type="checkbox" id="mental" name="mental" value="mental"/>
+                  <input     className='checkbox' type="checkbox" id="mental" name="mental" value="mental"/>
                   <label for="mental">Mental Health</label>
                 </div>
 

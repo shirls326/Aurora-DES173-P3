@@ -58,6 +58,7 @@ export default function MedTrackPref() {
               id="symptom"
               value="symptom"
               onChange={handleCheckboxChange}
+                  className='checkbox'
             />
             <label htmlFor="symptom">Symptom Tracking and Flare-up Logging</label>
           </div>
@@ -67,6 +68,7 @@ export default function MedTrackPref() {
               id="medication"
               value="medication"
               onChange={handleCheckboxChange}
+                  className='checkbox'
             />
             <label htmlFor="medication">Medication Reminders and Tracking</label>
           </div>
@@ -76,6 +78,7 @@ export default function MedTrackPref() {
               id="healthMetrics"
               value="healthMetrics"
               onChange={handleCheckboxChange}
+                  className='checkbox'
             />
             <label htmlFor="healthMetrics">
               Health Metrics Monitoring (e.g., heart rate, blood pressure)
@@ -87,6 +90,7 @@ export default function MedTrackPref() {
               id="mood"
               value="mood"
               onChange={handleCheckboxChange}
+                  className='checkbox'
             />
             <label htmlFor="mood">Mood and Mental Health Tracking</label>
           </div>
@@ -96,6 +100,7 @@ export default function MedTrackPref() {
               id="activityRecommendations"
               value="activityRecommendations"
               onChange={handleCheckboxChange}
+                  className='checkbox'
             />
             <label htmlFor="activityRecommendations">
               Activity Recommendations Based on Health
@@ -107,6 +112,7 @@ export default function MedTrackPref() {
               id="dietary"
               value="dietary"
               onChange={handleCheckboxChange}
+                  className='checkbox'
             />
             <label htmlFor="dietary">Dietary or Hydration Reminders</label>
           </div>
@@ -116,6 +122,7 @@ export default function MedTrackPref() {
               id="emergency"
               value="emergency"
               onChange={handleCheckboxChange}
+                  className='checkbox'
             />
             <label htmlFor="emergency">Emergency Contacts and Alerts</label>
           </div>
@@ -125,6 +132,7 @@ export default function MedTrackPref() {
               id="emergency"
               value="emergency"
               onChange={handleCheckboxChange}
+              className='checkbox'
             />
             <label htmlFor="emergency">Emergency Contacts and Alerts</label>
           </div>

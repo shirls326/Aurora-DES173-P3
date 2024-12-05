@@ -36,6 +36,7 @@ p,label,h2,h3,li{
         font-weight: 400;
         font-style: normal;
         font-size: 4rem;
+        font-variant-ligatures: none;
     }
 
     background-color: var(--innerContainerColor);
@@ -62,14 +63,26 @@ p,label,h2,h3,li{
     }
     
 }
+
+
 button{
     width: 40%;
     height: 7vh;
     border-radius: 30px;
     border-style: none;
     color: white;
-    /* background-color: #BDE9C8; */
     background-color: #7ED493;
     font-size: 2rem;
-
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+button:hover {
+    background-color: #5cbf7e;
+    transform: scale(1.05);
+}
+
+/*Global checkbox */
+
+
+
+

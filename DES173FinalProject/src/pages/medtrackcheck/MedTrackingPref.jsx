@@ -19,7 +19,7 @@ export default function MedTrackingPref() {
   return (
     <div className='MedTrackingPref container'>
       <div className='innerContainer'>
-        <h1>Specific Medical Condition Tracking</h1>
+        <h1>specific medical condition tracking</h1>
         <p>Would you like us to help you track a specific condition?</p>
         <div className='buttonRow'>
           <button onClick={() => handleChoice('yes')}>Yes</button> 
