@@ -48,7 +48,7 @@ export default function MedTrackPref() {
   return (
     <div className='medTrackPref container'>
       <div className='innerContainer'>
-        <h1>Symptom Tracking and Monitoring</h1>
+        <h1>specific medical condition tracking</h1>
         <p>What would you like specific assistance monitoring?</p>
         <div className='checkboxFormContainer'>
           <div className='checkBoxDiv'>
