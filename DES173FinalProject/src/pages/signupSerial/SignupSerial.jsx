@@ -35,7 +35,7 @@ export default function SignupSerial() {
   return (
     <div className="SignUpS container">
       <div className="innerContainer">
-        <h1>Hello</h1>
+        <h1>hello</h1>
         <div className="group">
           <p>
             Please enter your device <br /> serial number

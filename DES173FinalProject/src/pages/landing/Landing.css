@@ -11,12 +11,12 @@
     flex-direction: row;
 
     .loginButton{
+        margin-top: 5%;
         width: 40%;
-        height: 5%;
+        height: 5vh;
         border-radius: 1rem;
-        border-style: solid;
-        background-color: #BDE9C8;
-
+        border-style: none;
+        background-color: #7ED493;
     }
 
  
@@ -28,7 +28,7 @@
         font-family: "Playfair Display SC", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 3rem;
+        font-size: 6rem;
     }
 
     .left{
@@ -54,6 +54,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-family: "Manjari", sans-serif;
+        font-style: normal;
 
 
 
@@ -72,6 +74,7 @@
     justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    min-height: fit-content;
 
     input{
         width: 40%;
@@ -80,5 +83,8 @@
         background-color: #F8FFF6;
         border-style: solid;
         border-radius: 1rem;
+        font-family: "Manjari", sans-serif;
+        font-style: normal;
+      
     }
 }
