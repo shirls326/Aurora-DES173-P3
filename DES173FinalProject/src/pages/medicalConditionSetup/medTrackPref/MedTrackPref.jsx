@@ -6,7 +6,6 @@ export default function MedTrackPref() {
   const navigate = useNavigate();
   const [preferences, setPreferences] = useState([]);
 
-  // Defining seperate routes for each preference
   const routes = {
     symptom: '/MedicalConditionSetup/SymptomTrack',
     medication: '/MedicalConditionSetup/MedsTrack',
@@ -17,7 +16,7 @@ export default function MedTrackPref() {
     emergency: '/MedicalConditionSetup/EmergencySetup', 
   };
 
-  // Update the preferences list based on the checkbox selection
+  // update the preferences list based on the checkboxes
   const handleCheckboxChange = (event) => {
     const { value, checked } = event.target;
     if (checked) {
@@ -27,14 +26,14 @@ export default function MedTrackPref() {
     }
   };
 
-  // Navigate to the next preference in the list (Wasn't able to get it global on time)
+  // go to the next preference in the list
   const handleContinue = () => {
     if (preferences.length > 0) {
       navigateSequentially(preferences);
     }
   };
 
-  // Helper function to navigate to the next preference in the list
+  // navigate to the next preference in the list
   const navigateSequentially = (selectedPreferences, index = 0) => {
     if (index < selectedPreferences.length) {
       const nextRoute = routes[selectedPreferences[index]];
@@ -42,7 +41,7 @@ export default function MedTrackPref() {
         state: { nextIndex: index + 1, preferences: selectedPreferences },
       });
     } else {
-      navigate('/MedTrackingCheck'); // Default route when done
+      navigate('/MedTrackingCheck'); // default route
     }
   };
 
@@ -122,7 +121,7 @@ export default function MedTrackPref() {
               id="emergency"
               value="emergency"
               onChange={handleCheckboxChange}
-                  className='checkbox'
+              className='checkbox'
             />
             <label htmlFor="emergency">Emergency Contacts and Alerts</label>
           </div>

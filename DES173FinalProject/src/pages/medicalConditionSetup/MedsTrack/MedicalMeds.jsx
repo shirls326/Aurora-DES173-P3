@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import './MedicalMeds.css'; // Add CSS for styling
+import './MedicalMeds.css';
 import { useNavigate } from 'react-router-dom';
 
 export default function MedicalMedsTrack() {
-
-
   const navigate = useNavigate();
-  // using states to keep track of step and medication
   const [step, setStep] = useState(0);
   const [medications, setMedications] = useState([]);
   const [medicationInput, setMedicationInput] = useState('');
@@ -19,14 +16,14 @@ export default function MedicalMedsTrack() {
   const handleMedicationInputChange = (event) => {
     setMedicationInput(event.target.value);
     if (error && event.target.value.trim() !== '') {
-      setError(''); // Clear the error when the user types something valid
+      setError(''); // clear when the user types something valid
     }
   };
 
   const handleAddMedication = (event) => {
     if (event.key === 'Enter' && medicationInput.trim() !== '') {
       setMedications((prev) => [...prev, medicationInput.trim()]);
-      setMedicationInput(''); // Clear the input after adding
+      setMedicationInput(''); // clear after adding
     }
   };
 
@@ -42,7 +39,7 @@ export default function MedicalMedsTrack() {
   };
 
   const handleCustomize = (medication) => {
-    setCustomizationMode(medication); // Enter customization mode for the selected medication
+    setCustomizationMode(medication);
   };
 
   const handleTimeChange = (medication, time) => {
@@ -53,16 +50,16 @@ export default function MedicalMedsTrack() {
   };
 
   const handleSaveCustomization = () => {
-    setCustomizationMode(null); // Exit customization mode
+    setCustomizationMode(null); // exit customization mode
   };
 
   const handleContinue = () => {
     if (step === 0 && medications.length === 0) {
       setError('You need to type in at least one medication.');
-      return; // Stop the user from continuing
+      return;
     }
-    setError(''); // Clear the error if everything is valid
-    setStep(step + 1); // Move to the next step
+    setError('');
+    setStep(step + 1); // move on if no error
   };
 
 
@@ -72,7 +69,7 @@ export default function MedicalMedsTrack() {
       medicationTimes,
       notes,
     });
-    navigate('/NextStep');
+    navigate('/ActivityGoals');
   };
 
   const renderStep = () => {
@@ -86,7 +83,7 @@ export default function MedicalMedsTrack() {
               placeholder="Enter medication name and press Enter"
               value={medicationInput}
               onChange={handleMedicationInputChange}
-              onKeyDown={handleAddMedication} // Handle Enter key press
+              onKeyDown={handleAddMedication}
               className={error ? 'errorInput' : ''}
             />
             {error && <p className="errorMessage">{error}</p>}
@@ -113,7 +110,7 @@ export default function MedicalMedsTrack() {
         );
       case 1:
         if (customizationMode) {
-          // Render customization UI for the selected medication
+          // customization UI
           return (
             <div className='TimeSetUp'>
               <p>Customize your schedule for {customizationMode}</p>
@@ -131,7 +128,7 @@ export default function MedicalMedsTrack() {
             </div>
           );
         } else {
-          // Render the general "customize later" view
+          // general view
           return (
             <>
               <p>You can customize each medication by clicking on it, or continue to customize later.</p>

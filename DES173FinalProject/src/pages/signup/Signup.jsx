@@ -8,7 +8,7 @@ export default function Signup() {
 
   const handleContinue = () => {
    
-    navigate('/OnboardingPref'); // Uses the route that is declared in the main.jsx file
+    navigate('/OnboardingPref');
   };
 
   return (

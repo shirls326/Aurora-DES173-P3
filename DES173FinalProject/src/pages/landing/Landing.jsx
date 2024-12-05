@@ -1,6 +1,6 @@
 import React from 'react'
 import './Landing.css'
-import AURORALogo from '../../assets/AURORA logo.svg'
+import AURORALogo from '../../assets/logo.svg'
 
 export default function Landing() {
   return (
