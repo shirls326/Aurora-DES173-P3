@@ -6,18 +6,18 @@ export default function MedTrackPref() {
   const navigate = useNavigate();
   const [preferences, setPreferences] = useState([]);
 
-  // Define the routes for each preference
+  // Defining seperate routes for each preference
   const routes = {
-    symptom: '/MedicalConditionSetup/SymptomTrack', // Placeholder route
+    symptom: '/MedicalConditionSetup/SymptomTrack',
     medication: '/MedicalConditionSetup/MedsTrack',
-    healthMetrics: '/MedicalConditionSetup/HealthMetrics', // Placeholder route
+    healthMetrics: '/MedicalConditionSetup/HealthMetrics', 
     mood: '/MedicalConditionSetup/MedMentalHealth',
-    activityRecommendations: '/MedicalConditionSetup/ActivityRecommendations', // Placeholder route
-    dietary: '/MedicalConditionSetup/DietaryReminders', // Placeholder route
-    emergency: '/MedicalConditionSetup/EmergencySetup', // Placeholder route
+    activityRecommendations: '/MedicalConditionSetup/ActivityRecommendations', 
+    dietary: '/MedicalConditionSetup/DietaryReminders', 
+    emergency: '/MedicalConditionSetup/EmergencySetup', 
   };
 
-  // Update selected preferences when checkboxes are toggled
+  // Update the preferences list based on the checkbox selection
   const handleCheckboxChange = (event) => {
     const { value, checked } = event.target;
     if (checked) {
@@ -27,13 +27,14 @@ export default function MedTrackPref() {
     }
   };
 
-  // Navigate to the first selected route and queue up the remaining
+  // Navigate to the next preference in the list (Wasn't able to get it global on time)
   const handleContinue = () => {
     if (preferences.length > 0) {
       navigateSequentially(preferences);
     }
   };
 
+  // Helper function to navigate to the next preference in the list
   const navigateSequentially = (selectedPreferences, index = 0) => {
     if (index < selectedPreferences.length) {
       const nextRoute = routes[selectedPreferences[index]];

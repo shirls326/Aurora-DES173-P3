@@ -29,6 +29,7 @@
 
 
     .removeButton{
+        min-width: fit-content;
         padding-left: 10%;
         background-color: transparent;
         color: black;
@@ -218,6 +219,10 @@
         
     }
 
+}
+
+.case2{
+    
 }
 
    

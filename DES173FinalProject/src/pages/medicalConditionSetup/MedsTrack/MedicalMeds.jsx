@@ -156,7 +156,7 @@ export default function MedicalMedsTrack() {
         }
       case 2:
         return (
-          <div>
+          <div className='case2'>
             <p>How would you prefer to receive your reminders?</p>
             <label>
               <input
@@ -190,7 +190,7 @@ export default function MedicalMedsTrack() {
         );
       case 3:
         return (
-          <div>
+          <div className='case3'>
             <p>Do you have any additional notes or preferences?</p>
             <textarea
               placeholder="Add any additional details you'd like us to know"

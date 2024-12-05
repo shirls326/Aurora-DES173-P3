@@ -1,15 +1,17 @@
 import React from 'react'
 import './Landing.css'
+import AURORALogo from '../../assets/AURORA logo.svg'
 
 export default function Landing() {
   return (
     <div className='container landing'>
         <div className='left'>
-
+          <img src={AURORALogo} alt='AURORA logo' />
         </div>
         <div className='right'>
             <h1>welcome!</h1>
             <h2>Please enter your details</h2>
+
 
             <div className='loginInputs'>
 
