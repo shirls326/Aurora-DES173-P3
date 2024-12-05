@@ -58,6 +58,8 @@
     
           
           li {
+            cursor: pointer;
+
             margin: 1% 2%;
             min-width: fit-content;
             padding: 1%;
@@ -129,7 +131,6 @@
             height: 100%;
             
             flex: 1; /* Take up available space */
-            cursor: pointer;
             display:flex;
             flex-direction: column;
             justify-content: space-between;
@@ -222,7 +223,7 @@
 }
 
 .case2{
-    
+
 }
 
    
