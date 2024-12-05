@@ -18,7 +18,12 @@
         input{
             display: flex;
             align-self: center;
+            
         }
+        .inputError {
+            border: 2px solid #f28b82;
+            background-color: #ffecec; 
+          }
         
         
         .group{
@@ -34,4 +39,6 @@
         }
     }
 }
+
+
 

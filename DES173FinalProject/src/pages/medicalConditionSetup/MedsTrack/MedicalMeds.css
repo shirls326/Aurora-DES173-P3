@@ -223,8 +223,56 @@
 }
 
 .case2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    .checkboxcase2divs{
+        margin-bottom: 5%;
+    }
+     
+    .checkBoxDiv{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+ 
+        /* background-color: blue; */
+        input{
+          width: 20%;
+          height: 20px;
+          margin-right: 10px;
+          display:flex;
+          justify-content: flex-start;
+        }
+        label{
+        text-align: left;
+          width: 40%;
+          font-size: 60%;
+  
+        }
+      }
 
 }
+
+.case3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    
+    max-width: 100%;
+    max-height: 100%;
+    height: 50vh;
+    textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 
    
    
