@@ -19,9 +19,9 @@ export default function MedTrackingPref() {
   return (
     <div className='MedTrackingPref container'>
       <div className='innerContainer'>
-        <h1>specific medical condition tracking</h1>
-        <p>Would you like us to help you track a specific condition?</p>
-        <div className='buttonRow'>
+        <h1 className='animate__animated animate__fadeInDown'>specific medical condition tracking</h1>
+        <p className='animate__animated animate__fadeInDown'>Would you like us to help you track a specific condition?</p>
+        <div className='buttonRow animate__animated animate__fadeInDown'>
           <button onClick={() => handleChoice('yes')}>Yes</button> 
           <button className='no' onClick={() => handleChoice('no')}>No</button>
         </div>

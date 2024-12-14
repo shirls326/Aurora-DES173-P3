@@ -6,12 +6,19 @@ body{
 .container{
     min-height: 100vh;
     width: auto;
-    background-color: var(--lightGreen);
-
+    /* background-color: var(--lightGreen); */
+    /* background-image: url("../../assets//triangles.svg"); */
+    background-image: url("./assets/triangles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: center;
 }
 
 :root{
     --lightGreen: #BDE9C8;
+    --lightGreen: rgb(189, 233, 200);
+
     --innerContainerColor: #F8FFF6;
 
 }
@@ -25,6 +32,11 @@ p,label,h2,h3,li{
 
 /* Global Inner Container*/
 .innerContainer{
+    background-color: rgba(255,255,255,.7);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.3);
+
     padding-top: 1%;
  
     display: flex;
@@ -39,7 +51,9 @@ p,label,h2,h3,li{
         font-variant-ligatures: none;
     }
 
-    background-color: var(--innerContainerColor);
+
+  
+
     height: 90vh;
     width: 90%;
     border-radius: 1.5rem;

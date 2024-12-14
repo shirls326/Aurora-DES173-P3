@@ -34,7 +34,7 @@ export default function SignupSerial() {
 
   return (
     <div className="SignUpS container">
-      <div className="innerContainer">
+      <div className="innerContainer animate__animated animate__fadeInDown">
         <h1>hello</h1>
         <div className="group">
           <p>

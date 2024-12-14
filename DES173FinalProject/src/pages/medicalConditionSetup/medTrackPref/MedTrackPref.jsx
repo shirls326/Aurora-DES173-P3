@@ -48,9 +48,9 @@ export default function MedTrackPref() {
   return (
     <div className='medTrackPref container'>
       <div className='innerContainer'>
-        <h1>specific medical condition tracking</h1>
-        <p>What would you like specific assistance monitoring?</p>
-        <div className='checkboxFormContainer'>
+        <h1 className='animate__animated animate__fadeInDown'>specific medical condition tracking</h1>
+        <p className='animate__animated animate__fadeInDown'>What would you like specific assistance monitoring?</p>
+        <div className='checkboxFormContainer animate__animated animate__fadeInDown'>
           <div className='checkBoxDiv'>
             <input
               type="checkbox"
@@ -136,7 +136,7 @@ export default function MedTrackPref() {
             <label htmlFor="emergency">Emergency Contacts and Alerts</label>
           </div>
         </div>
-        <button onClick={handleContinue}>Continue</button>
+        <button className='animate__animated animate__fadeInDown' onClick={handleContinue}>Continue</button>
       </div>
     </div>
   );

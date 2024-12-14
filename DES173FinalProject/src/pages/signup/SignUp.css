@@ -22,7 +22,7 @@
         margin: 0.5%
     }
 
-    background-color: var(--innerContainerColor);
+    /* background-color: var(--innerContainerColor); */
     min-height: 90vh;
     width: 90%;
     border-radius: 1.5rem;

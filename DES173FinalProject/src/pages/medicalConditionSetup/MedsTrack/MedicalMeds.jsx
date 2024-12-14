@@ -77,21 +77,21 @@ export default function MedicalMedsTrack() {
       case 0:
         return (
           <>
-            <p>Which medications would you like to track?</p>
-            <input
+            <p className='animate__animated animate__fadeInDown'>Which medications would you like to track?</p>
+            <input 
               type="text"
               placeholder="Enter medication name and press Enter"
               value={medicationInput}
               onChange={handleMedicationInputChange}
               onKeyDown={handleAddMedication}
-              className={error ? 'errorInput' : ''}
+              className={error ? 'errorInput' : 'animate__animated animate__fadeInDown'}
             />
-            {error && <p className="errorMessage">{error}</p>}
-            <ul className='case0'>
+            {error && <p className="errorMessage animate__animated animate__fadeInDown">{error}</p>}
+            <ul className='case0 animate__animated animate__fadeInDown'>
               {medications.map((med, index) => (
-                <li key={index}>
+                <li key={index} className='animate__animated animate__fadeInDown'>
                   <span
-                    className="medicationText clickable"
+                    className="medicationText clickable "
                     onClick={() => handleCustomize(med)}
                   >
                     {med}
@@ -112,7 +112,7 @@ export default function MedicalMedsTrack() {
         if (customizationMode) {
           // customization UI
           return (
-            <div className='TimeSetUp'>
+            <div className='TimeSetUp animate__animated animate__fadeInDown'>
               <p>Customize your schedule for {customizationMode}</p>
               <label>
 
@@ -131,8 +131,8 @@ export default function MedicalMedsTrack() {
           // general view
           return (
             <>
-              <p>You can customize each medication by clicking on it, or continue to customize later.</p>
-              <ul className='case1'>
+              <p className='animate__animated animate__fadeInDown'>You can customize each medication by clicking on it, or continue to customize later.</p>
+              <ul className='case1 animate__animated animate__fadeInDown'>
                 {medications.map((med, index) => (
                   <li key={index} className="medicationItem" onClick={() => handleCustomize(med)}>
 
@@ -169,7 +169,7 @@ export default function MedicalMedsTrack() {
         }
       case 2:
         return (
-          <div className='case2'>
+          <div className='case2 animate__animated animate__fadeInDown'>
             <p>How would you prefer to receive your reminders?</p>
             <div className='checkboxcase2divs'>
               <div className='checkBoxDiv'>

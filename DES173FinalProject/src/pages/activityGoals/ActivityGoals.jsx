@@ -13,9 +13,9 @@ export default function ActivityGoals() {
   return (
     <div className='container activityGoals'>
       <div className="innerContainer">
-        <h1>Activity Goals</h1>
-        <p>What would you like to set your daily goal to?</p>
-        <div className='selectionGrid'>
+        <h1 className='animate__animated animate__fadeInDown'>Activity Goals</h1>
+        <p className='animate__animated animate__fadeInDown'>What would you like to set your daily goal to?</p>
+        <div className='selectionGrid animate__animated animate__fadeInDown'>
           <button onClick={handleSubmit}>10000 Steps</button>
           <button onClick={handleSubmit} style={{ backgroundColor: 'orange' }}>15000 Steps</button>
           <button onClick={handleSubmit} style={{ backgroundColor: 'red' }}>20000 Steps</button>

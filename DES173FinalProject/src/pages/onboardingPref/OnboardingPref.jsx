@@ -18,11 +18,11 @@ export default function OnboardingPref() {
 
     <div className='Onboarding container'>
       <div className='innerContainer'>
-        <h1>welcome, shirley!</h1>
-        <p>You can customize your bracelet and portal based on <br /> your preferences.</p>
-        <h2>Which areas would you like to track or improve?</h2>
+        <h1 className='animate__animated animate__fadeInDown'>welcome, shirley!</h1>
+        <p className='animate__animated animate__fadeInDown'>You can customize your bracelet and portal based on <br /> your preferences.</p>
+        <h2 className='animate__animated animate__fadeInDown'>Which areas would you like to track or improve?</h2>
         {/* form prompting for preferences */}
-        <div className='checkboxFormContainer'>
+        <div className='checkboxFormContainer animate__animated animate__fadeInDown'>
           <div className='checkBoxDiv'>
             <input className='checkbox' type="checkbox" id="sleep" name="sleep" value="sleep" />
             <label for="sleep">Sleep</label>

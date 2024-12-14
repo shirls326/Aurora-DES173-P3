@@ -14,10 +14,10 @@ export default function Signup() {
   return (
     <div className='SignUp container'>
       <div className='innerContainer'>  
-          <h1>sign up</h1>
-          <p>Enter your details below to create your <br/> account and get started</p>
-            <div className='SignUpInfo'>
-              <div className='col'>
+          <h1 className='animate__animated animate__fadeInDown'>sign up</h1>
+          <p className='animate__animated animate__fadeInDown' >Enter your details below to create your <br/> account and get started</p>
+            <div className='SignUpInfo animate__animated animate__fadeInDown'>
+              <div className='col animate__animated animate__fadeInDown'>
                 <div className='InputContainer'>
                     <p>Full Name</p>
                     <input type = "text" placeholder='John Doe'></input>
@@ -33,7 +33,7 @@ export default function Signup() {
             
 
               </div>
-              <div className='col'>
+              <div className='col animate__animated animate__fadeInDown'>
                 <div className='InputContainer'>
                     <p>Email</p>
                     <input type = "text" placeholder='johndoe@example.com'></input>

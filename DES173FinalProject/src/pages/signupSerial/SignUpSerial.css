@@ -40,5 +40,20 @@
     }
 }
 
+/* Media Query SignUpSerial */
+@media (max-width: 768px) {
+    .SignUpS{
+        .innerContainer{
+/*          
+            p{
+                font-size: 1rem;
+            } */
+            input{
+                width: 80%;
+            }
+        }
+    }
+}
+
 
 

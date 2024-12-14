@@ -6,7 +6,7 @@ export default function Landing() {
   return (
     <div className='container landing'>
         <div className='left'>
-          <img src={AURORALogo} alt='AURORA logo' />
+          <img className= 'animate__animated animate__fadeInDown'src={AURORALogo} alt='AURORA logo' />
         </div>
         <div className='right'>
             <h1>welcome!</h1>
